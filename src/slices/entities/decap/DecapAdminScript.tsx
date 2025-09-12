@@ -1,5 +1,5 @@
 import Script from "next/script";
 
 export function DecapAdminScript() {
-  return <Script src={process.env.NEXT_PUBLIC_DECAP_ADMIN_SCRIPT} />;
+  return <Script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" />;
 }
