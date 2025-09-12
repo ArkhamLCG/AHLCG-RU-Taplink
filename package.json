@@ -7,7 +7,6 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
-    "export": "npm run build && next export",
     "format": "biome format --write",
     "ts:check": "tsc --noEmit"
   },
