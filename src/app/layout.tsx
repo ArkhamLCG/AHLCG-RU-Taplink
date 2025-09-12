@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Head from "next/head";
 import { DecapIdentityScript } from "@/slices/entities/decap";
 
 export const metadata: Metadata = {
@@ -15,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <Head>
+      <body>
         <DecapIdentityScript />
-      </Head>
-      <body>{children}</body>
+        {children}
+      </body>
     </html>
   );
 }
