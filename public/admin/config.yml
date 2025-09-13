@@ -10,6 +10,7 @@ locale: 'ru'
 collections:
   - name: "pages"
     label: "Страницы"
+    label_singular: "Страницу"
     folder: "content/pages"
     create: true
     slug: "{{slug}}"

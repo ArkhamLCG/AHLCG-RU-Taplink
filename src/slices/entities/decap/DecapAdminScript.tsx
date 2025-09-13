@@ -1,5 +1,0 @@
-import Script from "next/script";
-
-export function DecapAdminScript() {
-  return <Script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" />;
-}

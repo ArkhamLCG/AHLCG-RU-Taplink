@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DecapIdentityScript } from "@/slices/entities/decap";
 
 export const metadata: Metadata = {
   title: "Карточный ужас Аркхэма",
@@ -14,10 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body>
-        <DecapIdentityScript />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
