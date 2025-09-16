@@ -1,3 +1,4 @@
+'use client'
 import * as C from './<FTName>.components'
 
 type <FTName>Props = {

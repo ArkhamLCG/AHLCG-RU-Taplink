@@ -1,5 +1,5 @@
-import { getMarkdownPageMeta } from "@/slices/modules/markdown/entities/page/lib/getMarkdownPageMeta";
-import { MarkdownPageContent } from "@/slices/modules/markdown/entities/page/ui";
+import { getMarkdownPageMeta } from "@/slices/modules/markdown/entities/page/lib";
+import { PageLayout } from "@/slices/widgets/layout/PageLayout";
 
 export const generateMetadata = async () => {
   const metadata = await getMarkdownPageMeta("pages/home");
@@ -7,5 +7,5 @@ export const generateMetadata = async () => {
 };
 
 export default async function Home() {
-  return <MarkdownPageContent slug="pages/home" />;
+  return <PageLayout slug="pages/home" />;
 }

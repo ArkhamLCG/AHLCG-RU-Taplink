@@ -1,6 +1,6 @@
 "use client";
 import styled from "@emotion/styled";
 
-export const Container = styled.div`
-
+export const Row = styled.div`
+  display: flex;
 `;
