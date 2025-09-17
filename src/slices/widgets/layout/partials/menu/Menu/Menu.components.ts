@@ -10,6 +10,14 @@ export const Container = styled.div`
   text-transform: uppercase;
 `;
 
+export const MenuContainer = styled.div`
+  margin: 0 auto;
+  
+  @media (max-width: 1280px) {
+    max-width: 1280px;
+  }
+`;
+
 export const Content = styled(Row)`
   justify-content: space-between;
 `;

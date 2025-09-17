@@ -5,11 +5,15 @@ import { Tag } from "@/slices/shared/ui";
 import type { MarkdownPageMeta } from "../../model";
 import * as C from "./MarkdownPageContent.components";
 
-type MarkdownPageContentProps = {
+export type MarkdownPageContentProps = {
   slug: string;
+  showTitle?: boolean;
 };
 
-export async function MarkdownPageContent({ slug }: MarkdownPageContentProps) {
+export async function MarkdownPageContent({
+  slug,
+  showTitle = true,
+}: MarkdownPageContentProps) {
   const { content, meta } = await getMarkdownData<MarkdownPageMeta>(slug);
   const { tags } = meta;
 
@@ -24,7 +28,7 @@ export async function MarkdownPageContent({ slug }: MarkdownPageContentProps) {
           ))}
           <C.UpdatedDate>{date}</C.UpdatedDate>
         </C.Header>
-        <C.Title>{meta.title}</C.Title>
+        {showTitle && <C.Title>{meta.title}</C.Title>}
         {/** biome-ignore lint/security/noDangerouslySetInnerHtml: markdown content */}
         <C.Markdown dangerouslySetInnerHTML={{ __html: content }} />
       </C.Content>

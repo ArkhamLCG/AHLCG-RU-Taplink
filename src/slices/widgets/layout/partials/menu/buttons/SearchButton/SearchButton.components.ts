@@ -10,7 +10,8 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-size: inherit;
   font-family: inherit;
   color: inherit;
   text-transform: inherit;
@@ -18,6 +19,7 @@ export const Container = styled.button`
 
 export const Text = styled.div`
   line-height: 1;
+  padding-top: 0.25rem;
 `;
 
 export const Icon = styled.img`

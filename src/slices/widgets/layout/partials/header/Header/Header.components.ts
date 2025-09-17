@@ -24,7 +24,7 @@ export const Container = styled.header`
 
 export const Decoration = styled(HeaderDecoration)`
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 3.5rem;
   left: 0;
   right: 0;
@@ -35,6 +35,6 @@ export const Decoration = styled(HeaderDecoration)`
 
 export const Menu = styled(BaseMenu)`
   position: relative;
-  z-index: 2;
+  z-index: 3;
   padding-top: 1rem;
 `;

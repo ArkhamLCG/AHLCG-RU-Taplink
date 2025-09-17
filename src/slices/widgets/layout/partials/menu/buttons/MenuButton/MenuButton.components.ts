@@ -12,7 +12,8 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-size: inherit;
   font-family: inherit;
   color: inherit;
   text-transform: inherit;
@@ -39,5 +40,6 @@ export const BottomLine = styled.div`
 `;
 
 export const Text = styled.div`
+  padding-top: 0.25rem;
   line-height: 1;
 `;
