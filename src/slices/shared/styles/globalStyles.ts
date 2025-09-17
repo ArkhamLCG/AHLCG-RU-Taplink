@@ -2,7 +2,7 @@ import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
   @font-face {
-    font-family: 'TheanoDidot';
+    font-family: 'Theano Didot';
     src: url('/fonts/TheanoDidot/TheanoDidot-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -10,10 +10,6 @@ injectGlobal`
   }
 
   :root {
-    --font-theano-didot: 'TheanoDidot', serif;
-  }
-
-  body {
-    font-family: var(--font-theano-didot);
+    --font-theano-didot: 'Theano Didot', serif;
   }
 `;

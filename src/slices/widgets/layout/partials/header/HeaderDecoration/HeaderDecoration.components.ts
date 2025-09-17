@@ -1,12 +1,10 @@
+"use client";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Row } from "@/slices/shared/ui";
 
-export const Container = styled.header`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+export const Container = styled(Row)`
+
 `;
 
 export const LogoContainer = styled.div`
@@ -21,17 +19,6 @@ export const Logo = styled.img`
   margin: 0 -1rem;
   @media (min-width: 768px) {
     margin: 0;
-  }
-`;
-
-export const Decoration = styled(Row)`
-  position: absolute;
-  top: 4rem;
-  left: 0;
-  right: 0;
-  display: flex;
-  @media (min-width: 768px) {
-    top: 2rem;
   }
 `;
 
@@ -50,6 +37,7 @@ export const TripleSegmentLine = styled(Row)`
 
 export const DualSegmentLine = styled(Row)`
   flex: 1;
+  transform: translateY(0.5rem);
   @media (min-width: 768px) {
     display: none;
   }
@@ -86,11 +74,13 @@ export const RightTentacles = styled.div`
 
 export const Line = styled.div`
   flex: 1;
-  background: url("/images/header/line.svg") no-repeat center bottom;
+  background-image: url("/images/header/line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
   background-size: 571px;
   height: 40px;
 `;
 
 export const MobileLine = styled(Line)`
-  background-position: center top;
+  background-position: top center;
 `;

@@ -1,13 +1,13 @@
 "use client";
 import type { PropsWithChildren } from "react";
-import { Body } from "@/slices/shared/ui";
 import { Header } from "../partials";
+import * as C from "./MainLayout.components";
 
 export function MainLayout({ children }: PropsWithChildren) {
   return (
-    <Body>
+    <C.Container>
       <Header />
       {children}
-    </Body>
+    </C.Container>
   );
 }

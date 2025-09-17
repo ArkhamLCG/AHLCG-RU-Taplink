@@ -9,5 +9,5 @@ export const Body = styled(Col)`
   box-sizing: border-box;
   display: flex;
   justify-content: baseline;
-  font-family: var(--font-theano-didot);
+  font-family: var(--font-old-standard-tt);
 `;

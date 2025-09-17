@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Old_Standard_TT } from "next/font/google";
 import { EmotionProvider } from "@/slices/app/ui";
-import "@/slices/shared/styles";
 
 import "./globals.css";
 
@@ -9,6 +8,12 @@ const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-cormorant-garamond",
+});
+
+const oldStandardTT = Old_Standard_TT({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "700"],
+  variable: "--font-old-standard-tt",
 });
 
 export const metadata: Metadata = {
@@ -37,7 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={cormorantGaramond.variable}>
+    <html
+      lang="ru"
+      className={`${cormorantGaramond.variable} ${oldStandardTT.variable}`}
+      suppressHydrationWarning
+    >
       <body>
         <EmotionProvider>{children}</EmotionProvider>
       </body>

@@ -1,3 +1,8 @@
+:root {
+  --font-cormorant-garamond: "Cormorant Garamond", serif;
+  --font-old-standard-tt: "Old Standard TT", serif;
+}
+
 body {
   margin: 0;
 }
