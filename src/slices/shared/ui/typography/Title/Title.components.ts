@@ -4,7 +4,6 @@ import styled from "@emotion/styled";
 import { color, font } from "@/slices/shared/config";
 
 const commonStyle = css`
-  font-family: var(--font-old-standard-tt);
   color: ${color.text.sandWhite};
   letter-spacing: ${font.letterSpacing.title};
 `;

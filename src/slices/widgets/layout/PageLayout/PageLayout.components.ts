@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   position: relative;
+  padding-top: 10rem;
 `;
 
 export const Background = styled.div`
@@ -12,6 +13,7 @@ export const Background = styled.div`
   background-position: center top;
   width: 100%;
   height: 154vw;
+  max-height: 100%;
   position: absolute;
   top: 0;
   left: 0;

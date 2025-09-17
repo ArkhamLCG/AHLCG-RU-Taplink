@@ -23,8 +23,6 @@ export const LeftCorner = styled.img`
 `;
 
 export const Content = styled(Col)`
-
-  font-family: var(--font-old-standard-tt);
   color: ${color.text.sandWhite};
   letter-spacing: ${font.letterSpacing.title};
   font-size: ${font.size.xs}px;

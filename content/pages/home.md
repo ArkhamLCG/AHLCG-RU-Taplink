@@ -1,7 +1,7 @@
 ---
 title: "Добро пожаловать в Аркхэм"
 description: "Русскоязычное сообщество любителей Arkham Horror: The Card Game. Материалы, руководства, мастерская и многое другое."
-date: 2024-01-15T10:00:00.000Z
+date: 2024-02-15T10:00:00.000Z
 author: "Сообщество AHLCG RU"
 image: "/images/home/ahlcg-ru-banner.jpg"
 category: "general"
