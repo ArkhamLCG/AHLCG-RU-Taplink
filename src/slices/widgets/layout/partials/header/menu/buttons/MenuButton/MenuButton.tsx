@@ -1,19 +1,19 @@
 "use client";
-import type { JSX } from "react";
-import * as C from "./MenuButton.components";
+import styled from "@emotion/styled";
+import { font } from "@/slices/shared/config";
 
-type MenuButtonProps = JSX.IntrinsicElements["button"] & {
-  open?: boolean;
-};
-
-export function MenuButton({ open = false, ...props }: MenuButtonProps) {
-  return (
-    <C.Container {...props}>
-      <C.Toggle>
-        <C.TopLine />
-        <C.BottomLine />
-      </C.Toggle>
-      <C.Text>Меню</C.Text>
-    </C.Container>
-  );
-}
+export const MenuButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: inherit;
+  color: inherit;
+  font-size: ${font.size.small}px;
+  text-transform: uppercase;
+`;

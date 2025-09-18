@@ -2,21 +2,9 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Col } from "@/slices/shared/ui";
+import { MenuButton } from "../MenuButton";
 
-export const Container = styled.button`
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 1rem;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  font-size: inherit;
-  font-family: inherit;
-  color: inherit;
-  text-transform: inherit;
+export const Container = styled(MenuButton)`
 `;
 
 export const Toggle = styled(Col)`

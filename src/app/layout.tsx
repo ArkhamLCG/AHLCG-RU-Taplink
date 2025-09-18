@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Old_Standard_TT } from "next/font/google";
-import { EmotionProvider } from "@/slices/app/ui";
+import { AppProvider } from "@/slices/app/ui";
+import { getMenuData } from "@/slices/entities/menu/lib";
 
 import "./globals.css";
 
@@ -36,11 +37,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const menuItems = await getMenuData();
+
   return (
     <html
       lang="ru"
@@ -48,7 +51,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <EmotionProvider>{children}</EmotionProvider>
+        <AppProvider menuItems={menuItems}>{children}</AppProvider>
       </body>
     </html>
   );

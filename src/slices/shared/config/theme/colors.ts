@@ -10,4 +10,7 @@ export const color = {
       placeholder: 0.3,
     },
   },
+  action: {
+    hover: "rgb(209, 213, 219)",
+  },
 };

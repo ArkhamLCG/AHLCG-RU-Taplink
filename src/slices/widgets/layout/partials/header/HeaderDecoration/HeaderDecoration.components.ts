@@ -75,7 +75,7 @@ export const RightTentacles = styled.div`
 export const Line = styled.div`
   flex: 1;
   background-image: url("/images/header/line.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom center;
   background-size: 571px;
   height: 40px;

@@ -12,6 +12,19 @@ public_folder: "/images/content"
 locale: 'en'
 
 collections:
+  - name: "menu"
+    label: "Menu"
+    label_singular: "Menu item"
+    folder: "content/menu"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Название", name: "title", widget: "string"}
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Порядок", name: "order", widget: "number", default: 0}
+      - {label: "Активно", name: "active", widget: "boolean", default: true}
+      - {label: "Внешняя ссылка", name: "external", widget: "boolean", default: false}
+
   - name: "pages"
     label: "Pages"
     label_singular: "Page"

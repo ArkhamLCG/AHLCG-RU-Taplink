@@ -1,9 +1,12 @@
 "use client";
+import type { JSX } from "react";
 import * as C from "./Header.components";
 
-export function Header() {
+type HeaderProps = JSX.IntrinsicElements["div"];
+
+export function Header(props: HeaderProps) {
   return (
-    <C.Container>
+    <C.Container {...props}>
       <C.Menu />
       <C.Decoration />
     </C.Container>
