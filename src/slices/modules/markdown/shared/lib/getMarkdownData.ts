@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import type { MarkdownData } from "../model";
+import { replaceImages } from "./plugins";
 
 const contentDirectory = path.join(process.cwd(), "content");
 
@@ -16,10 +17,13 @@ export async function getMarkdownData<Meta>(
 
   const processedContent = await remark().use(html).process(content);
 
+  const htmlContent = processedContent.toString();
+  const wrappedContent = replaceImages(htmlContent);
+
   const meta = data as Meta;
 
   return {
-    content: processedContent.toString(),
+    content: wrappedContent,
     meta,
   };
 }

@@ -13,6 +13,8 @@ published: true
 
 Добро пожаловать в русскоязычное сообщество любителей **Arkham Horror: The Card Game**! Здесь вы найдете все необходимое для погружения в мир мистических ужасов и захватывающих приключений.
 
+![Test image](https://cdn.svc.asmodee.net/production-arkhamhorror/uploads/image-converter/2025/07/Astrological-Watch_featured.webp)
+
 ## Что вас ждет
 
 ### Руководства и гайды

@@ -21,7 +21,7 @@ export function HeaderDecoration(props: HeaderDecorationProps) {
 
       <C.LogoContainer>
         <Link href="/">
-          <C.Logo src="/images/ah-logo.png" />
+          <C.Logo src="/images/logo.avif" />
         </Link>
       </C.LogoContainer>
 

@@ -1,7 +1,7 @@
 "use client";
 import styled from "@emotion/styled";
-import { Menu as BaseMenu } from "../../menu";
 import { HeaderDecoration } from "../HeaderDecoration";
+import { Menu as BaseMenu } from "../menu";
 
 export const Container = styled.header`
   position: fixed;
