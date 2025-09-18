@@ -8,8 +8,8 @@ type MenuListProps = JSX.IntrinsicElements["nav"];
 export function MenuList(props: MenuListProps) {
   const items = useContext(MenuContext);
 
-  const primary = items.filter(({ active, primary }) => active && primary);
-  const secondary = items.filter(({ active, primary }) => active && !primary);
+  const primary = items.filter(({ primary }) => primary);
+  const secondary = items.filter(({ primary }) => !primary);
 
   return (
     <C.Container {...props}>

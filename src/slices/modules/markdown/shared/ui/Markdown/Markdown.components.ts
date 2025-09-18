@@ -34,6 +34,23 @@ export const Content = styled.div`
     max-width: 100%;
   }
 
+  p:has(img) {
+    position: relative;
+    min-height: 100px;
+    &::before {
+      content: "";
+      background-image: url("/images/border/thumbnail.png");
+      background-size: 100% 100%;
+      display: block;
+      position: absolute;
+      top: -5px;
+      bottom: -5px;
+      left: -10px;
+      right: -10px;
+      z-index: 1;
+    }
+  }
+
   a {
     color: inherit;
   }

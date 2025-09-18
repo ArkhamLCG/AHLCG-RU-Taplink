@@ -16,5 +16,5 @@ export async function getMenuData() {
     },
   });
 
-  return data.sort((a, b) => a.order - b.order);
+  return data.filter((item) => item.active).sort((a, b) => a.order - b.order);
 }
