@@ -1,4 +1,4 @@
-import { getMarkdownPageMeta } from "@/slices/modules/markdown/entities/page/lib";
+import { getMarkdownPageMeta } from "@/slices/entities/page/lib";
 import { PageLayout } from "@/slices/widgets/layout/PageLayout";
 
 export const generateMetadata = async () => {

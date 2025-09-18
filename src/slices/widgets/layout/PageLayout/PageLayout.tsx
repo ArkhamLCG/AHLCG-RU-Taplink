@@ -1,12 +1,9 @@
-import {
-  MarkdownPageContent,
-  type MarkdownPageContentProps,
-} from "@/slices/modules/markdown/entities/page/ui";
+import { PageContent, type PageContentProps } from "@/slices/entities/page/ui";
 import { Container } from "@/slices/shared/ui";
 import { MainLayout } from "../MainLayout";
 import * as C from "./PageLayout.components";
 
-type PageLayoutProps = MarkdownPageContentProps;
+type PageLayoutProps = PageContentProps;
 
 export function PageLayout({ ...props }: PageLayoutProps) {
   return (
@@ -15,7 +12,7 @@ export function PageLayout({ ...props }: PageLayoutProps) {
         <C.Background />
         <C.Content>
           <Container>
-            <MarkdownPageContent {...props} />
+            <PageContent {...props} />
           </Container>
         </C.Content>
       </C.Container>
