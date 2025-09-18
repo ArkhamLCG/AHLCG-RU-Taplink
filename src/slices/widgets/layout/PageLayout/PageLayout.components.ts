@@ -28,11 +28,11 @@ export const Background = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
   }
 `;
 
 export const Content = styled.div`
   position: relative;
-  z-index: 2;
+  z-index: 3;
 `;

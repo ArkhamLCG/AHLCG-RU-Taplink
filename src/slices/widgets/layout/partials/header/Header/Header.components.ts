@@ -4,8 +4,6 @@ import { HeaderDecoration } from "../HeaderDecoration";
 import { Menu as BaseMenu } from "../menu";
 
 export const Container = styled.header`
-  position: fixed;
-  z-index: 100;
   top: 0;
   left: 0;
   right: 0;

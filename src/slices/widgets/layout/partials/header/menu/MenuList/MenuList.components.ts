@@ -11,7 +11,6 @@ export const Container = styled.nav`
   display: flex;
   flex: 1;
   align-items: center;
-  gap: 2rem;
   justify-content: space-between;
 `;
 
