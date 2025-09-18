@@ -37,25 +37,5 @@ export const Content = styled.div`
   a {
     color: inherit;
   }
-
-  .image {
-    position: relative;
-    min-height: 100px;
-    &:visited {
-      color: ${color.text.sandWhite};
-    }
-    &::before {
-      content: "";
-      background-image: url("/images/border/thumbnail.png");
-      background-size: 100% 100%;
-      display: block;
-      position: absolute;
-      top: -5px;
-      bottom: -5px;
-      left: -10px;
-      right: -10px;
-      z-index: 1;
-    }
-  }
   
 `;

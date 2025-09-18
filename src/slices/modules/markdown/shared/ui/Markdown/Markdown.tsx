@@ -1,12 +1,27 @@
 "use client";
-import type { JSX } from "react";
+import { Remark } from "react-remark";
+import { Image } from "../Image";
 import * as C from "./Markdown.components";
 
-type MarkdownProps = JSX.IntrinsicElements["div"] & {
+type MarkdownProps = {
   content: string;
 };
 
+// biome-ignore lint/suspicious/noExplicitAny: markdown parsing
+type MDProps = any;
+
 export function Markdown({ content }: MarkdownProps) {
-  /** biome-ignore lint/security/noDangerouslySetInnerHtml: markdown content */
-  return <C.Content dangerouslySetInnerHTML={{ __html: content }} />;
+  return (
+    <C.Content>
+      <Remark
+        rehypeReactOptions={{
+          components: {
+            img: (props: MDProps) => <Image {...props} />,
+          },
+        }}
+      >
+        {content}
+      </Remark>
+    </C.Content>
+  );
 }
