@@ -11,4 +11,7 @@ export const MenuLink = styled(Link)`
   gap: 0.5rem;
   color: ${color.text.sandWhite};
   text-decoration: none;
+  &:hover {
+    color: ${color.action.hover};
+  }
 `;

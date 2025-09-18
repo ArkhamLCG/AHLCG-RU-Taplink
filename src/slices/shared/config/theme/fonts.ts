@@ -9,6 +9,7 @@ export const font = {
     small: fsz(0.875),
     default: defaultFontSize,
     medium: fsz(1.125),
+    large: fsz(1.5),
   },
   letterSpacing: {
     title: "-0.05em",

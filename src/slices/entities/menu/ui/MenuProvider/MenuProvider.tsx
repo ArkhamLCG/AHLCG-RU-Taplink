@@ -1,7 +1,7 @@
 "use client";
 
 import type { PropsWithChildren } from "react";
-import { MenuContext } from "../../lib/MenuContext";
+import { MenuContext } from "../../lib/client";
 import type { MenuItem } from "../../model";
 
 interface MenuProviderProps extends PropsWithChildren {

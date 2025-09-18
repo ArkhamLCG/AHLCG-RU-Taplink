@@ -1,7 +1,7 @@
 "use client";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { color, font } from "@/slices/shared/config";
+import { font } from "@/slices/shared/config";
 import { Row } from "@/slices/shared/ui";
 import { MenuToggleButton, SearchButton } from "../buttons";
 import { MenuLink } from "../MenuLink";
@@ -53,10 +53,5 @@ export const NavItem = styled.div`
 `;
 
 export const NavLink = styled(MenuLink)`
- 
   transition: color 0.2s ease;
-  
-  &:hover {
-    color: ${color.text.white};
-  }
 `;

@@ -4,4 +4,5 @@ export interface MenuItem {
   order: number;
   active: boolean;
   external: boolean;
+  primary: boolean;
 }

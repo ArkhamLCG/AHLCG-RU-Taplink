@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Old_Standard_TT } from "next/font/google";
 import { AppProvider } from "@/slices/app/ui";
-import { getMenuData } from "@/slices/entities/menu/lib";
+import { getMenuData } from "@/slices/entities/menu/lib/getMenuData";
 
 import "./globals.css";
 
@@ -20,21 +20,6 @@ const oldStandardTT = Old_Standard_TT({
 export const metadata: Metadata = {
   title: "Карточный ужас Аркхэма",
   description: "Сайт сообщества настольной игры",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
-  themeColor: "#000000",
-  colorScheme: "dark",
-  formatDetection: {
-    telephone: false,
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
 
 export default async function RootLayout({

@@ -6,7 +6,8 @@ export function MainLayout({ children }: PropsWithChildren) {
   return (
     <C.Container>
       <C.Header />
-      {children}
+      <C.Content>{children}</C.Content>
+      <C.Footer />
     </C.Container>
   );
 }

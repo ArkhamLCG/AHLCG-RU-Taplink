@@ -1,17 +1,19 @@
 "use client";
+import { reject } from "ramda";
 import { type JSX, useContext } from "react";
-import { MenuContext } from "@/slices/entities/menu/lib/MenuContext";
+import { MenuContext } from "@/slices/entities/menu/lib";
+import type { MenuItem } from "@/slices/entities/menu/model";
 import * as C from "./MenuList.components";
 
 type MenuListProps = JSX.IntrinsicElements["nav"];
 
+const isPrimary = ({ primary }: MenuItem) => primary;
+
 export function MenuList(props: MenuListProps) {
   const items = useContext(MenuContext);
 
-  const half = Math.floor(items.length / 2);
-
-  const left = items.slice(0, half);
-  const right = items.slice(half);
+  const left = items.filter(isPrimary);
+  const right = reject(isPrimary, items);
 
   return (
     <C.Container {...props}>

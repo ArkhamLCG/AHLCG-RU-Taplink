@@ -1,5 +1,5 @@
 import type { MenuItem } from "@/slices/entities/menu/model";
-import { getMarkdownList } from "@/slices/modules/markdown/shared/lib";
+import { getMarkdownList } from "@/slices/modules/markdown/shared/lib/getMarkdownList";
 
 export async function getMenuData() {
   const data = await getMarkdownList<MenuItem>({
@@ -11,6 +11,7 @@ export async function getMenuData() {
         order: data.order || 0,
         active: data.active !== false,
         external: data.external || false,
+        primary: data.primary || false,
       } as MenuItem;
     },
   });

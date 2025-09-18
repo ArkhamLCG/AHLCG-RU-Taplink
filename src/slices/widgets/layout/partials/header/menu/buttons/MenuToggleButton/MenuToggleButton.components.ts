@@ -28,6 +28,7 @@ export const BottomLine = styled.div`
 `;
 
 export const Text = styled.div`
+  color: inherit;
   padding-top: 0.25rem;
   line-height: 1;
 `;

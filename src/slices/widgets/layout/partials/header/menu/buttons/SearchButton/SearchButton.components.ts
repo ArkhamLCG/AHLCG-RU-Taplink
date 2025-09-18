@@ -6,6 +6,7 @@ export const Container = styled(MenuButton)`
 `;
 
 export const Text = styled.div`
+  color: inherit;
   padding-top: 0.25rem;
   @media (min-width: 1024px) {
     display: none;

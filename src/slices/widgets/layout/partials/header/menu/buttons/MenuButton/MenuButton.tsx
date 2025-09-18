@@ -1,6 +1,6 @@
 "use client";
 import styled from "@emotion/styled";
-import { font } from "@/slices/shared/config";
+import { color, font } from "@/slices/shared/config";
 
 export const MenuButton = styled.button`
   background-color: transparent;
@@ -16,4 +16,7 @@ export const MenuButton = styled.button`
   color: inherit;
   font-size: ${font.size.small}px;
   text-transform: uppercase;
+  &:hover {
+    color: ${color.action.hover};
+  }
 `;
