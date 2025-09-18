@@ -40,6 +40,7 @@ export const Content = styled.div`
 
   .image {
     position: relative;
+    min-height: 100px;
     &:visited {
       color: ${color.text.sandWhite};
     }

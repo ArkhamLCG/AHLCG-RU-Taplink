@@ -8,9 +8,13 @@ import * as C from "./ArticleContent.components";
 
 export type ArticleContentProps = {
   slug: string;
+  showDate?: boolean;
 };
 
-export async function PageContent({ slug }: ArticleContentProps) {
+export async function PageContent({
+  slug,
+  showDate = true,
+}: ArticleContentProps) {
   const { content, meta } = await getMarkdownData<ArticleMeta>(slug);
   const { tags } = meta;
 
@@ -23,7 +27,7 @@ export async function PageContent({ slug }: ArticleContentProps) {
           {tags.map((tag, index) => (
             <Tag key={identity(index)}>{tag}</Tag>
           ))}
-          <C.UpdatedDate>{date}</C.UpdatedDate>
+          {showDate && <C.UpdatedDate>{date}</C.UpdatedDate>}
         </C.Header>
         <C.Title>{meta.title}</C.Title>
         <Markdown content={content} />
