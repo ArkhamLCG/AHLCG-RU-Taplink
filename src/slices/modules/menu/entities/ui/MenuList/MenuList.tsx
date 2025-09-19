@@ -10,13 +10,18 @@ export function MenuList(props: MenuListProps) {
 
   const primary = items.filter(({ primary }) => primary);
   const secondary = items.filter(({ primary }) => !primary);
-
-  const [open, setOpen] = useState(false);
-
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [searchVisible, setSearchVisible] = useState(false);
   return (
     <C.Container {...props}>
-      <C.MobileToggle active={open} onClick={() => setOpen(!open)} />
-      <C.Content $open={open}>
+      {searchVisible && (
+        <C.SearchPopup onClose={() => setSearchVisible(!searchVisible)} />
+      )}
+      <C.MobileToggle
+        active={menuVisible}
+        onClick={() => setMenuVisible(!menuVisible)}
+      />
+      <C.Content $open={menuVisible}>
         <C.LeftList>
           {primary.map((item) => (
             <C.NavItem key={item.url}>
@@ -32,7 +37,7 @@ export function MenuList(props: MenuListProps) {
           ))}
         </C.RightList>
       </C.Content>
-      {/* <C.Search /> */}
+      <C.Search onClick={() => setSearchVisible(true)} />
     </C.Container>
   );
 }

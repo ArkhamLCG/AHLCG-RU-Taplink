@@ -6,6 +6,7 @@ import { Breakpoint } from "@/slices/shared/lib";
 import { Row } from "@/slices/shared/ui";
 import { MenuToggleButton, SearchButton } from "../buttons";
 import { MenuLink } from "../MenuLink";
+import { SearchPopup as BaseSearchPopup } from "../SearchPopup";
 
 export const Container = styled.nav` 
   position: relative;
@@ -27,6 +28,15 @@ export const MobileToggle = styled(MenuToggleButton)`
 export const Search = styled(SearchButton)`
   position: relative;
   z-index: 3;
+`;
+
+export const SearchPopup = styled(BaseSearchPopup)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
 `;
 
 export const Content = styled(Row)<{ $open: boolean }>`
