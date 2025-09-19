@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { color, font } from "@/slices/shared/config";
 import { Title as BaseTitle, LeadTitle, Row } from "@/slices/shared/ui";
-import { ImageBackground } from "@/slices/shared/ui/content";
+import { InvestigatorBackground } from "@/slices/shared/ui/content";
 
 export const Container = styled.div`
   position: relative;
@@ -41,7 +41,7 @@ export const DefaultBackground = styled.div`
   }
 `;
 
-export const Background = styled(ImageBackground)`
+export const Background = styled(InvestigatorBackground)`
   ${backgroundStyle}
 `;
 

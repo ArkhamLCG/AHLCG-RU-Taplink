@@ -10,6 +10,7 @@ export const color = {
       placeholder: 0.3,
     },
   },
+  sand: "rgb(193, 184, 163)",
   action: {
     hover: "rgb(209, 213, 219)",
   },

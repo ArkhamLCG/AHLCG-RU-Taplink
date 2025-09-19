@@ -3,6 +3,13 @@ const fsz = (value: number) => value * defaultFontSize;
 export const font = {
   family: {
     primary: "var(--font-old-standard-tt)",
+    secondary: "var(--font-cormorant-garamond)",
+  },
+  weight: {
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
   },
   size: {
     xs: fsz(0.7),
