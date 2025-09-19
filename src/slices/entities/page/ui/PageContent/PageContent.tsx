@@ -1,5 +1,5 @@
+import { Markdown } from "@/slices/modules/markdown/features/ui";
 import { getMarkdownData } from "@/slices/modules/markdown/shared/lib/getMarkdownData";
-import { Markdown } from "@/slices/modules/markdown/shared/ui";
 import type { MarkdownPageMeta } from "../../model";
 import * as C from "./PageContent.components";
 
