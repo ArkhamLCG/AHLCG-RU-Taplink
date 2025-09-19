@@ -11,10 +11,11 @@ export function EmotionProvider({ children }: { children: React.ReactNode }) {
     return cache;
   });
 
+  const emotionKey = `${cache.key} ${Object.keys(cache.inserted).join(" ")}`;
   useServerInsertedHTML(() => {
     return (
       <style
-        data-emotion={`${cache.key} ${Object.keys(cache.inserted).join(" ")}`}
+        data-emotion={emotionKey}
         // biome-ignore lint/security/noDangerouslySetInnerHtml: Emotion CSS injection
         dangerouslySetInnerHTML={{
           __html: Object.values(cache.inserted).join(" "),

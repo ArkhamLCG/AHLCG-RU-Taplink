@@ -1,6 +1,6 @@
+import { MenuProvider } from "@modules/menu/app/ui";
+import type { MenuItem } from "@modules/menu/entities/model";
 import type { PropsWithChildren } from "react";
-import type { MenuItem } from "@/slices/entities/menu/model";
-import { MenuProvider } from "@/slices/entities/menu/ui";
 import { EmotionProvider } from "./providers";
 
 type AppProviderProps = PropsWithChildren & {

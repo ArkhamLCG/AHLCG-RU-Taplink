@@ -1,7 +1,7 @@
+import { getMenuData } from "@modules/menu/entities/lib/getMenuData";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Old_Standard_TT } from "next/font/google";
 import { AppProvider } from "@/slices/app/ui";
-import { getMenuData } from "@/slices/entities/menu/lib/getMenuData";
 
 import "./globals.css";
 

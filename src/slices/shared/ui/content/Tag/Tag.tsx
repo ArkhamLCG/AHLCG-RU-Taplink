@@ -5,20 +5,19 @@ import * as C from "./Tag.components";
 
 type TagProps = PropsWithChildren;
 
-const topCornerUrl = "/images/tag/tl.svg";
-const bottomCornerUrl = "/images/tag/bl.svg";
+const cornerUrl = "/images/decoration/tag.svg";
 
 export function Tag({ children }: TagProps) {
   return (
     <C.Container>
       <Col>
-        <C.LeftCorner src={topCornerUrl} />
-        <C.LeftCorner src={bottomCornerUrl} />
+        <C.TopLeftCorner src={cornerUrl} />
+        <C.BottomLeftCorner src={cornerUrl} />
       </Col>
       <C.Content>{children}</C.Content>
       <Col>
-        <C.RightCorner src={bottomCornerUrl} />
-        <C.RightCorner src={topCornerUrl} />
+        <C.TopRightCorner src={cornerUrl} />
+        <C.BottomRightCorner src={cornerUrl} />
       </Col>
     </C.Container>
   );

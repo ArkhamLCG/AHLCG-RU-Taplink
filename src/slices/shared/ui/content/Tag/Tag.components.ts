@@ -18,8 +18,23 @@ const cornerStyle = css`
   height: 12px;
 `;
 
-export const LeftCorner = styled.img`
+export const TopLeftCorner = styled.img`
   ${cornerStyle}
+`;
+
+export const BottomLeftCorner = styled.img`
+  ${cornerStyle}
+  transform: scaleY(-1);
+`;
+
+export const TopRightCorner = styled.img`
+  ${cornerStyle}
+  transform: rotate(180deg);
+`;
+
+export const BottomRightCorner = styled.img`
+  ${cornerStyle}
+  transform: scaleY(-1) rotate(180deg);
 `;
 
 export const Content = styled(Col)`
@@ -32,11 +47,6 @@ export const Content = styled(Col)`
   align-items: center;
   line-height: 1;
   padding: 0.25rem 0.25rem 0;
-`;
-
-export const RightCorner = styled.img`
-  ${cornerStyle}
-  transform: rotate(180deg);
 `;
 
 export const RightTopCorner = styled.img`

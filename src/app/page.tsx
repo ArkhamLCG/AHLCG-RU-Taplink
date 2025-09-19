@@ -1,5 +1,5 @@
-import { getMarkdownPageMeta } from "@/slices/entities/page/lib";
-import { PageLayout } from "@/slices/widgets/layout/PageLayout";
+import { getMarkdownPageMeta } from "@modules/page/entities/lib";
+import { PageLayout } from "@/slices/app/ui/layout/PageLayout";
 
 export const generateMetadata = async () => {
   const metadata = await getMarkdownPageMeta("pages/home");
