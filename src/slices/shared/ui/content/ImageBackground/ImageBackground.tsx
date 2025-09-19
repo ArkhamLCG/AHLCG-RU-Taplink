@@ -1,12 +1,12 @@
 "use client";
 import type { JSX } from "react";
-import * as C from "./PageBackground.components";
+import * as C from "./ImageBackground.components";
 
-type PageBackgroundProps = JSX.IntrinsicElements["div"] & {
+type ImageBackgroundProps = JSX.IntrinsicElements["div"] & {
   src: string;
 };
 
-export function PageBackground({ src, ...props }: PageBackgroundProps) {
+export function ImageBackground({ src, ...props }: ImageBackgroundProps) {
   return (
     <C.Container {...props} $src={src}>
       <C.Background />

@@ -1,2 +1,1 @@
 export * from "./ImageBackground";
-export * from "./Tag";

@@ -11,6 +11,7 @@ export const font = {
     medium: fsz(1.125),
     large: fsz(1.5),
     xl: fsz(3),
+    xxl: fsz(4),
     lead: fsz(5),
   },
   letterSpacing: {

@@ -13,23 +13,19 @@ export async function PageContent({ slug }: PageContentProps) {
   const { content, meta } = await getMarkdownData<MarkdownPageMeta>(slug);
   const { image, title, description } = meta;
 
-  const hasImage = Boolean(image);
-
   return (
     <C.Container>
       {image ? <C.Background src={image} /> : <C.DefaultBackground />}
-      {/* <C.Background src={meta.image} /> */}
-      {/* {meta.image && <C.Shadows />} */}
-      <Container>
-        <C.Content>
-          {hasImage ? (
-            <LeadScreen title={title}>{description}</LeadScreen>
-          ) : (
-            <C.Title>{title}</C.Title>
-          )}
+      <C.Content>
+        {image ? (
+          <LeadScreen title={title}>{description}</LeadScreen>
+        ) : (
+          <C.Title>{title}</C.Title>
+        )}
+        <Container>
           <Markdown content={content} />
-        </C.Content>
-      </Container>
+        </Container>
+      </C.Content>
     </C.Container>
   );
 }

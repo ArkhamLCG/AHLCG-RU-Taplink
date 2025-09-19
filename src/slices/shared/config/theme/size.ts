@@ -1,6 +1,6 @@
 export const size = {
   header: {
-    paddingTop: 100,
+    paddingTop: 130,
   },
   breakpoints: {
     mobile: 768,

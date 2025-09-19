@@ -5,6 +5,10 @@ import { color, font } from "@/slices/shared/config";
 export const Content = styled.div`
   color: ${color.text.sandWhite};
   font-size: ${font.size.medium}px;
+  
+  h1, h2, h3, h4, h5, h6 {
+    hyphens: auto;
+  }
 
   h2, h3 {
     font-weight: 500;

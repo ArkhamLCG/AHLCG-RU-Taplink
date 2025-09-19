@@ -10,8 +10,11 @@ type LeadScreenProps = JSX.IntrinsicElements["section"] & {
 export function LeadScreen({ title, children, ...props }: LeadScreenProps) {
   return (
     <C.Container {...props}>
-      <LeadTitle>{title}</LeadTitle>
-      <C.Description>{children}</C.Description>
+      <C.Content>
+        <LeadTitle>{title}</LeadTitle>
+        <C.Description>{children}</C.Description>
+        <C.Overlay />
+      </C.Content>
     </C.Container>
   );
 }

@@ -14,10 +14,11 @@ export const LogoContainer = styled.div`
 export const Logo = styled.img`
   position: relative;
   z-index: 2;
-  width: 10rem;
+  width: 8rem;
   flex-shrink: 0;
   margin: 0 -1rem;
   @media (min-width: 768px) {
+    width: 10rem;
     margin: 0;
   }
 `;
@@ -26,7 +27,7 @@ const segmentLineStyles = css`
   flex: 1;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 `;
 
 export const TripleSegmentLine = styled(Row)`

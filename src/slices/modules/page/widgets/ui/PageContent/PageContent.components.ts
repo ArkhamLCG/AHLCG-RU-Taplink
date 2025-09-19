@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { color, font } from "@/slices/shared/config";
 import { Title as BaseTitle, LeadTitle, Row } from "@/slices/shared/ui";
-import { PageBackground } from "../PageBackground";
+import { ImageBackground } from "@/slices/shared/ui/content";
 
 export const Container = styled.div`
   position: relative;
@@ -30,7 +30,7 @@ export const DefaultBackground = styled.div`
   &::before {
     content: "";
     display: block;    
-    background: linear-gradient(0deg, #0D1317 0%, rgba(13, 19, 23, 0.00) 100%);
+    background: linear-gradient(0deg, rgba(13, 19, 23, 0.8) 0%, rgba(13, 19, 23, 0.00) 100%);
     height: 100%;
     max-height: 200px;
     position: absolute;
@@ -41,7 +41,7 @@ export const DefaultBackground = styled.div`
   }
 `;
 
-export const Background = styled(PageBackground)`
+export const Background = styled(ImageBackground)`
   ${backgroundStyle}
 `;
 
