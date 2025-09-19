@@ -1,7 +1,9 @@
 "use client";
 import styled from "@emotion/styled";
+import { Col } from "../../../layout";
 
-export const Container = styled.div<{ $src: string }>`
+export const Container = styled(Col)<{ $src: string }>`
+  justify-content: center;
   background-image: url(${({ $src }) => $src});
   background-size: cover;
   background-position: center;

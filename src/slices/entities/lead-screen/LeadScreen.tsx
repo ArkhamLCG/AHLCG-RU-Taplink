@@ -11,7 +11,7 @@ export function LeadScreen({ title, children, ...props }: LeadScreenProps) {
   return (
     <C.Container {...props}>
       <C.Content>
-        <LeadTitle>{title}</LeadTitle>
+        <LeadTitle underline>{title}</LeadTitle>
         <C.Description>{children}</C.Description>
         <C.Overlay />
       </C.Content>

@@ -1,19 +1,25 @@
 "use client";
-import { LinkButton } from "@/slices/shared/ui";
-import { MainLayout } from "@/slices/widgets/layout/MainLayout";
+import { Body, LinkButton } from "@/slices/shared/ui";
+import { Header } from "@/slices/widgets/layout/partials";
 import * as C from "./NotFoundPage.components";
 
 export function NotFoundPage() {
   return (
-    <MainLayout>
+    <Body>
+      <Header />
       <C.Background src="/images/background/lost.avif">
-        <C.Title size={1}>Вы потерялись во времени и пространстве</C.Title>
-        <C.Description>
-          Страница, которую вы ищете, могла быть удалена, перемещена или никогда
-          не существовала.
-        </C.Description>
-        <LinkButton href="/">На главную</LinkButton>
+        <C.Content>
+          <C.Title>Вы потерялись во времени и пространстве</C.Title>
+          <C.Description>
+            Страница, которую вы ищете,
+            <br />
+            могла быть удалена, перемещена
+            <br />
+            или никогда не существовала.
+          </C.Description>
+          <LinkButton href="/">На главную</LinkButton>
+        </C.Content>
       </C.Background>
-    </MainLayout>
+    </Body>
   );
 }

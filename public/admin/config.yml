@@ -1,10 +1,10 @@
-backend:
-  name: test-repo
-  branch: feat/workshop
-
 # backend:
-#   name: git-gateway
-#   branch: main
+#   name: test-repo
+#   branch: feat/workshop
+
+backend:
+  name: git-gateway
+  branch: main
 
 media_folder: "public/images/content"
 public_folder: "/images/content"
@@ -39,6 +39,6 @@ collections:
       - {label: "Дата публикации", name: "date", widget: "datetime"}
       - {label: "Автор", name: "author", widget: "string"}
       - {label: "Изображение", name: "image", widget: "image", required: false}
-      - {label: "Категория", name: "category", widget: "select", options: ["workshop", "guide", "news", "general"], required: false}
+      - {label: "Категория", name: "category", widget: "select", options: ["Фан. Контент", "Мастерская", "Статья", "Новость", "Основное"], required: false}
       - {label: "Теги", name: "tags", widget: "list", required: false}
       - {label: "Опубликовано", name: "published", widget: "boolean", default: false}
