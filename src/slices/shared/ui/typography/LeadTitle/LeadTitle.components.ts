@@ -19,7 +19,7 @@ export const Lead = styled.h1`
   hyphens: auto;
   font-size: ${font.size.large}px;
   @media (min-width: ${size.breakpoints.mobile}px) {
-    font-size: ${font.size.xl}px;
+    font-size: ${font.size.xxl}px;
   }
   @media (min-width: ${size.breakpoints.tablet}px) {
     font-size: ${font.size.lead}px;

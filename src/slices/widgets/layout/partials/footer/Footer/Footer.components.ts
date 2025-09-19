@@ -127,6 +127,10 @@ export const Column = styled(Col)`
 export const Menu = styled.div`
 `;
 
+export const MainSocial = styled(Row)`
+  gap: 1rem;
+`;
+
 export const MenuItem = styled.a`
   display: block;
   color: ${color.text.sandWhite};

@@ -36,6 +36,21 @@ export function Footer() {
             </C.Menu>
           </C.Column>
           <C.Column>
+            <C.MainSocial>
+              <C.MenuItem
+                href="https://t.me/arkhamhorrorlcg_ru_chat"
+                target="_blank"
+              >
+                Чат
+              </C.MenuItem>
+              <C.MenuItem
+                href="https://t.me/arkhamhorrorlcg_ru"
+                target="_blank"
+              >
+                Канал
+              </C.MenuItem>
+            </C.MainSocial>
+
             <C.Social>
               <C.SocialLink
                 href="https://t.me/arkhamhorrorlcg_ru_chat"

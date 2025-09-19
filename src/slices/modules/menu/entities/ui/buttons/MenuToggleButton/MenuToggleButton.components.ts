@@ -17,14 +17,26 @@ const lineStyles = css`
   width: 100%;
   height: 2px;
   background-image: url("/images/icon/minus.svg");
+  transition: transform 0.3s ease;
+  transform-origin: center;
 `;
 
-export const TopLine = styled.div`
+export const TopLine = styled.div<{ $active?: boolean }>`
   ${lineStyles}
+  ${({ $active }) =>
+    $active &&
+    css`
+    transform: translateX(2px) rotate(45deg) translateY(4px);
+  `}
 `;
 
-export const BottomLine = styled.div`
-  ${lineStyles};
+export const BottomLine = styled.div<{ $active?: boolean }>`
+  ${lineStyles}
+  ${({ $active }) =>
+    $active &&
+    css`
+    transform: translateX(2px) rotate(-45deg) translateY(-4px) ;
+  `}
 `;
 
 export const Text = styled.div`

@@ -10,8 +10,8 @@ export const font = {
     default: defaultFontSize,
     medium: fsz(1.125),
     large: fsz(1.5),
-    xl: fsz(3),
-    xxl: fsz(4),
+    xl: fsz(1.75),
+    xxl: fsz(3),
     lead: fsz(5),
   },
   letterSpacing: {
