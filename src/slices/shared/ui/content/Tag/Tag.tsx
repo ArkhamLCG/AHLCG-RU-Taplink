@@ -5,7 +5,7 @@ import * as C from "./Tag.components";
 
 type TagProps = PropsWithChildren;
 
-const cornerUrl = "/images/decoration/tag.svg";
+const cornerUrl = "/images/decoration/tag-corner.svg";
 
 export function Tag({ children }: TagProps) {
   return (

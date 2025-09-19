@@ -7,5 +7,5 @@ export const generateMetadata = async () => {
 };
 
 export default async function Home() {
-  return <PageLayout slug="pages/home" showTitle={false} />;
+  return <PageLayout slug="pages/home" />;
 }

@@ -1,2 +1,1 @@
 export * from "./LeadTitle";
-export * from "./Title";

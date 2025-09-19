@@ -3,13 +3,11 @@ title: "Добро пожаловать в Аркхэм"
 description: "Русскоязычное сообщество любителей Arkham Horror: The Card Game. Материалы, руководства, мастерская и многое другое."
 date: 2024-02-15T10:00:00.000Z
 author: "Сообщество AHLCG RU"
-image: "/images/home/ahlcg-ru-banner.jpg"
+image: "/images/content/arkham.avif"
 category: "general"
 tags: ["главная", "сообщество"]
 published: true
 ---
-
-# ДОБРО ПОЖАЛОВАТЬ В АРКХЭМ
 
 Добро пожаловать в русскоязычное сообщество любителей **Arkham Horror: The Card Game**! Здесь вы найдете все необходимое для погружения в мир мистических ужасов и захватывающих приключений.
 

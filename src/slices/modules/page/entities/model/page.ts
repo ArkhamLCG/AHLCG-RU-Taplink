@@ -5,4 +5,5 @@ export type MarkdownPageMeta = {
   author: string;
   tags: string[];
   slug: string;
+  image?: string;
 };

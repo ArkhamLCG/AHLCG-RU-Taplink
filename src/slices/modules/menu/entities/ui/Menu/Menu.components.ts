@@ -1,6 +1,6 @@
 "use client";
 import styled from "@emotion/styled";
-import { color } from "@/slices/shared/config";
+import { color, size } from "@/slices/shared/config";
 import { Row } from "@/slices/shared/ui";
 import { MenuList } from "../MenuList";
 
@@ -10,10 +10,9 @@ export const Container = styled.div`
 
 export const MenuContainer = styled.div`
   margin: 0 auto;
-  padding: 0 1rem;
-  
-  @media (max-width: 1280px) {
-    max-width: 1280px;
+  max-width: 1280px;
+  @media (min-width: ${size.breakpoints.tablet}px) {
+    padding: 0 1rem;
   }
 `;
 
