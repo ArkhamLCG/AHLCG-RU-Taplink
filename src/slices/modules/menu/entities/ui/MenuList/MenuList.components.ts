@@ -29,7 +29,7 @@ export const Search = styled(SearchButton)`
   z-index: 3;
 `;
 
-const mobileContentStyles = css`
+export const Content = styled(Row)<{ $open: boolean }>`
   position: fixed;
   top: -100vh;
   flex-direction: column;
@@ -38,46 +38,40 @@ const mobileContentStyles = css`
   height: 100%;
   z-index: 2;
   background-color: ${color.background};
-  flex-direction: column;
   padding-top: 7rem;
   box-sizing: border-box;
   transition: top 0.3s ease;
-`;
-
-const desktopContentStyles = css`
-  position: static;
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-
-  align-items: center;
-  justify-content: space-between;
-`;
-
-export const Content = styled(Row)<{ $open: boolean }>`
-  @media ${Breakpoint.lt(size.breakpoints.tablet)} {
-    ${mobileContentStyles};
-    ${({ $open }) =>
-      $open &&
-      css`
-      top: 0px;
-    `}
-  }
+  ${({ $open }) =>
+    $open &&
+    css`
+    top: 0px;
+  `}
   @media ${Breakpoint.gte(size.breakpoints.tablet)} {
-    ${desktopContentStyles};
+    position: static;
+    background-color: transparent;
+    height: auto;
+    flex-direction: row;
+    padding-top: 0;
+    flex: 1;
+
+    align-items: center;
+    justify-content: space-between;
   }
 `;
 
 const listStyles = css`
   display: flex;
-  @media ${Breakpoint.lt(size.breakpoints.tablet)} {
-    flex-direction: column;
-    font-size: ${font.size.xl}px;
-    letter-spacing: -0.1rem;
-    font-variant: small-caps;
-  }
+  flex-direction: column;
+  font-size: ${font.size.xl}px;
+  letter-spacing: -0.1rem;
+  font-variant: small-caps;
+
   @media ${Breakpoint.gte(size.breakpoints.tablet)} {
     flex: 1;
+    flex-direction: row;
+    font-size: inherit;
+    font-variant: normal;
+    letter-spacing: inherit;
     gap: 1rem;
   }
 `;
@@ -105,6 +99,12 @@ export const NavItem = styled.div`
     left: 1rem;
     right: 1rem;
     height: 1px;
+  }
+  @media ${Breakpoint.gte(size.breakpoints.tablet)} {
+    width: auto;
+    &::after {
+      display: none;
+    }
   }
 `;
 

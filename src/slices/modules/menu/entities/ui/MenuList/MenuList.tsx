@@ -32,7 +32,7 @@ export function MenuList(props: MenuListProps) {
           ))}
         </C.RightList>
       </C.Content>
-      <C.Search />
+      {/* <C.Search /> */}
     </C.Container>
   );
 }
